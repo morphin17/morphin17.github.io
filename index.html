@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Поисковик фильмов</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+        <script src="jquery.tmpl.js"></script>
+        <script id="itemTmpl" type="text/x-jquery-tmpl">
+            <div id=${filmId} class="item">
+                <h1>${nameRu} / ${nameEn}</h1>
+                <img class="poster" src="${posterUrl}" alt="Постер к фильму" width="250">
+                
+                <table class="info">
+                    <tbody>
+                        <tr>
+                            <td class="type">год</td>
+                            <td>
+                                ${year}                                 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type">длительность</td>
+                            <td>
+                                ${filmLength}                                 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type">страна</td>
+                            <td>
+                                ${countries}                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="type">жанр</td>
+                            <td>
+                                ${genres}                               
+                            </td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            
+                <div class="desc">
+                    <h2>Описание:</h2>
+                    
+                    <p>Загрузка...</p>
+            
+                </div>
+            </div>            
+        </script>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">  
+            <div id="header">
+                <input type="search" name="filmName" id="search">
+                <input type="button" value="Найти" id="searchButton">
+            </div>
+            <div id="content">
+                Нет данных для визуализации...
+            </div>
+            <div id="footer">
+                <p>Поиск информации о фильмах и сериалах. 2020 г.</p>
+            </div>
+        </div>
+        
+    </body>
+</html>
