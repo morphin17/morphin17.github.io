@@ -1,0 +1,54 @@
+h1{
+    color: red;
+}
+
+p{
+    color: green;
+}
+
+.p2{
+    color: yellow;
+}
+
+.desc{
+    clear: both;
+}
+
+.poster{
+    width: 40%;
+    float: left;
+    margin-right: 10px;
+}
+
+.item{
+    width: 500px;
+    background-color: whitesmoke;
+    border: 2px solid wheat;
+    border-bottom: 6px solid orange;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.type{
+    font-weight: bold;
+}
+
+#search{
+    width: 80%;
+}
+
+#header{
+    margin-bottom: 10px;
+}
+
+#footer{
+    margin-top: 10px;
+    background-color: orangered;
+    color: white;
+    padding: 5px;
+}
+
+#container{
+    width: 500px;
+    margin: auto;
+}
